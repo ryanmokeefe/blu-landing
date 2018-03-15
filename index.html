@@ -18,7 +18,7 @@
             <form style="display: inline" action="http://facebook.com/" method="get">
                 <button class="fb" href="facebook.com"></button>
             </form>
-            <form style="display: inline" action="/" method="get">
+            <form style="display: inline" action="#" method="get">
                 <button class="donate">
                 <img src="links/cash-icon.png" alt="donate">
                     Donate
@@ -35,12 +35,12 @@
                 <h3 class="lightblue-text">Join Samantha!</h3>
                 <p class="black-text">Sign up to receive the latest campaign updates.</p>
 
-                <form action="/">
-                    <input class="email" type="text" placeholder="Email">
+                <form action="" onsubmit="return validateEmail()">
+                    <input class="email" type="email" placeholder="Email">
                     <input class="zip" type="text" placeholder="ZIP">
                     <input class="form-submit" type="submit" name="Join" id="join" value="Join >">
                 </form>
-
+                
             </div>
         </div>
 

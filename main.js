@@ -1,4 +1,12 @@
-const twitter = document.getElementsByClassName('twitter')[0]
-const fb = document.getElementsByClassName('fb')[0]
+const email = document.getElementsByClassName("email")[0];
+const zip = document.getElementsByClassName("zip")[0];
 
-twitter.addEventListener('click', )
+function validateEmail() {
+    if (email.value === "" || zip.value === "") {
+        alert("Email and ZIP code are required");
+    } 
+    else {
+        alert("Thank you for your support!")
+    }
+
+}
