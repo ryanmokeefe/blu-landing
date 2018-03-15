@@ -16,7 +16,7 @@ nav {
     height: 90px;
 }
 .nav-image {
-    background-image: url("links/SamanthaHall_Logo.png");
+    background-image: url("Links/SamanthaHall_Logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100px;
@@ -36,10 +36,10 @@ nav button {
     border: none;
 }
 .twitter {
-    background-image: url("links/twitter.png");
+    background-image: url("Links/twitter.png");
 }
 .fb {
-    background-image: url("links/facebook.png");
+    background-image: url("Links/facebook.png");
 }
 .fb:hover, .twitter:hover {
     height: 24px;
@@ -80,7 +80,7 @@ h3 {
 .main {
     display: flex;
     justify-content: space-between;
-    background-image: url("links/main.jpg");
+    background-image: url("Links/main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
