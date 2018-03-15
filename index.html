@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+        <div class="nav-image"></div>
+        <div class="right nav-right">
+            <form style="display: inline" action="http://twitter.com/" method="get">
+                <button class="twitter"></button>
+            </form>
+            <form style="display: inline" action="http://facebook.com/" method="get">
+                <button class="fb" href="facebook.com"></button>
+            </form>
+            <form style="display: inline" action="/" method="get">
+                <button class="donate">
+                <img src="links/cash-icon.png" alt="donate">
+                    Donate
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="main">
+        <img class="profile" src="links/headshot.png" alt="headshot">
+        <div class="right">
+            <h1 class="blue-text">The <span class="lightblue-text">Right Choice</span> for Texas</h1>
+            <div class="card-form">
+                <h3 class="lightblue-text">Join Samantha!</h3>
+                <p class="black-text">Sign up to receive the latest campaign updates.</p>
+
+                <form action="/">
+                    <input class="email" type="text" placeholder="Email">
+                    <input class="zip" type="text" placeholder="ZIP">
+                    <input class="form-submit" type="submit" name="Join" id="join" value="Join >">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img class="logo-bottom" src="links/reversed.png" alt="logo">
+        <div class="footer-content">
+            <p>
+                555 Main Street, Austin, TX 98765
+            </p>
+            <p>
+                <a href="">Privacy Policy</a> 
+                <span class="break"> | </span> ©2016 Samantha Hall for Congress. All Rights Reserved.
+            </p>
+            <div class="paid-for">
+                <p>Paid for by Samantha Hall for Congress</p>
+        </div>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
 </body>
 </html>
