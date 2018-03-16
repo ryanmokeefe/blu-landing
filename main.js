@@ -6,7 +6,7 @@ function validateEmail() {
         alert("Email and ZIP code are required");
     } 
     else {
-        alert("Thank you for your support!")
+        alert("Thank you for your support!");
     }
 
 }

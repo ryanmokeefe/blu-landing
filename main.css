@@ -12,25 +12,26 @@ body {
 nav {
     background-color: rgb(0, 164, 236);
     margin: 0;
-    padding: 5px 100px;
-    height: 90px;
+    padding: 5px 150px;
+    height: 125px;
 }
 .nav-image {
-    background-image: url("/Links/SamanthaHall_Logo.png");
+    background-image: url("Links/SamanthaHall_Logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 150px;
+    height: 120px;
+    width: 200px;
     margin: 0;
 }
 .nav-right {
-    display: inline;
-    margin: -75px 0;
+    display: flex;
+    align-items: center;
+    margin: -90px 0;
 }
 nav button {
-    margin: 5px;
-    height: 20px;
-    width: 20px;
+    margin: 7px;
+    height: 30px;
+    width: 30px;
     background-size: cover;
     background-color: transparent;
     border: none;
@@ -42,21 +43,21 @@ nav button {
     background-image: url("Links/facebook.png");
 }
 .fb:hover, .twitter:hover {
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
+    margin: 6px;
 }
 .donate {
     background-color: rgb(246, 58, 71);
-    width: 125px;
-    height: 45px;
+    width: 150px;
+    height: 60px;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 0 15px;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     line-height: 50px;
     font-weight: bold;
-    line-height: 25px;
     letter-spacing: 1px;
 }
 .donate:hover {
@@ -70,7 +71,7 @@ nav button {
 /* BODY */
 
 h1 {
-    font-size: 42px;
+    font-size: 46px;
     padding: 0 25px 0 0;
 }
 h3 {
@@ -79,11 +80,12 @@ h3 {
 }
 .main {
     display: flex;
-    justify-content: space-between;
-    background-image: url("/Links/main.jpg");
+    justify-content: center;
+    background-image: url("Links/main.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 500px;
     padding: 50px;
     overflow: hidden;
 }
@@ -91,15 +93,19 @@ h3 {
     float: right;
 }
 .main .right {
-    margin: 0 25px;
-    width: 400px;
+    top: 60px;
+    margin: 25px;
+    width: 410px;
 }
 .profile {
-   height: 500px;
+   height: 700px;
+   margin: 0 100px 0 -75px;
 }
 .card-form {
-    background-color: rgba(245, 245, 245, .95);
-    height: 40%;
+    /* fallback color */
+    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, .9);
+    min-height: 25%;
     border-radius: 2px;
     box-shadow: 3px 3px 10px black;
     padding: 10px 20px;
@@ -141,7 +147,7 @@ input {
 
 .logo-bottom {
     display: flex;
-    height: 100px;
+    height: 80px;
     margin: 30px auto;
 }
 footer p {
@@ -161,38 +167,75 @@ footer a {
     margin: 20px auto;
     width: 300px;
 }
+.code {
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    margin: 20px auto;
+    padding: 3px;
+}
+
 
 /* Tablets */
-@media only screen and (max-width: 847px) {
+
+@media only screen and (max-width: 880px) {
+    nav {
+        padding: 5px 40px;
+    }
+    .profile {
+        height: 600px;
+        margin: 0 auto;
+    }
+    .main .right {
+        margin: 0 20px;
+    }
     .main {
         padding: 5px;
-        height: 400px;
+        height: 410px;
     } 
 }
 
 /* Phones */
-@media only screen and (max-width: 690px) {
 
+@media only screen and (max-width: 690px) {
+    nav {
+        height: 65px;
+    }
+    .nav-image {
+        height: 100px;
+        width: 100px;
+    }
+    .donate {
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    } 
     .profile {
         display: none;
     }
     .main .right {
         margin: 0 auto;
     }
-
 }
 
-/* Smaller Phones */
-@media only screen and (max-width: 545px) {
-
+@media only screen and (max-width: 430px) {
     nav {
-
-        height: 180px;
+        padding: 5px 20px;
+        height: 125px;
     }
-    .nav-right {
-        position: relative;
-        bottom: 0;
-        float: left;
+    .nav-image {
         margin: 0 auto;
     }
+    .nav-right {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: -20px auto;
+        float: none;
+    }
+    footer {
+        margin: 0 10px;
+    }
+
 }
+
